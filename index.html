@@ -1,9 +1,9 @@
-            <div class="about-content">
-                
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editorial Producer Services</title>
+    <title>Ed Words LLC</title>
     <style>
         * {
             margin: 0;
@@ -74,10 +74,14 @@
         }
 
         h2 {
-            color: #1e3c72;
+            color: #3d1a52;
             font-size: 2rem;
             margin-bottom: 1.5rem;
             text-align: center;
+        }
+
+        h3 {
+            color: #3d1a52;
         }
 
         .services-grid {
@@ -101,7 +105,6 @@
         }
 
         .service-card h3 {
-            color: #1e3c72;
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
@@ -122,12 +125,31 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        @media (max-width: 768px) {
-            .about-photo {
-                float: none;
-                width: 100%;
-                margin: 0 0 1rem 0;
-            }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .portfolio-item {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .portfolio-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+        }
+
+        .portfolio-caption {
+            padding: 1rem;
+            text-align: center;
+            color: #333;
+            font-size: 0.95rem;
         }
 
         .contact-form {
@@ -145,7 +167,7 @@
         label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #1e3c72;
+            color: #3d1a52;
             font-weight: 500;
         }
 
@@ -176,7 +198,7 @@
         }
 
         button:hover {
-            background: #2a5298;
+            background: #5b2c6f;
         }
 
         footer {
@@ -203,12 +225,22 @@
             .container {
                 padding: 2rem 1rem;
             }
+
+            .about-photo {
+                float: none;
+                width: 100%;
+                margin: 0 0 1rem 0;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ed Words</h1>
+        <h1>Ed Words LLC</h1>
         <p>Experienced editorial support for interviews long and short</p>
     </header>
 
@@ -216,15 +248,15 @@
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <section id="services">
-             <section id="services">
             <h2>Services</h2>
-<p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; line-height: 1.8;">Want to take your media organization's interviews and conversations to the next level?<br>Contact Ed Words.</p>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; line-height: 1.8;">Want to take your media organization's interviews and conversations to the next level?<br>Contact Ed Words.</p>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>Comprehensive Outlines</h3>
@@ -257,11 +289,65 @@
             <h2>About</h2>
             <div class="about-content">
                 <img class="about-photo" src="ed photo.jpg" alt="Ed Demaria">
-                <p>Ed Demaria, founder of Ed Words, is known for preparing sharp questions and well-researched outlines that help interviewers have thoughtful and newsmaking conversations. He strives to translate complex information into a digestible product building on his years of experience.</p>
-                <p style="margin-top: 1rem;">Prior to starting Ed Words, Ed spent more than a decade at NBC News as a producer for the Meet the Press family of shows. On a daily basis, Ed supplied anchors with questions and supporting information for interviews with newsmakers, politicians, and experts. He also gave guidance for the content of presidential debates and one-on-one conversations with top political candidates.</p>
+                <p>Ed Demaria, founder of Ed Words LLC, is known for preparing sharp questions and well-researched outlines that help interviewers have thoughtful and newsmaking conversations. He strives to translate complex information into a digestible product building on his years of experience.</p>
+                <p style="margin-top: 1rem;">Prior to starting Ed Words LLC, Ed spent more than a decade at NBC News as a producer for the Meet the Press family of shows. On a daily basis, Ed supplied anchors with questions and supporting information for interviews with newsmakers, politicians, and experts. He also gave guidance for the content of presidential debates and one-on-one conversations with top political candidates.</p>
                 <p style="margin-top: 1rem;">At NBC News, Ed was a key part of breaking news and election night coverage, gathering data and facts in real time to support live broadcasts. He synthesized exit poll data and developed on-air hits at the Big Board for NBC News' Emmy-nominated election night broadcasts. Ed received an RTDNA Edward R. Murrow award for his contributions to MSNBC's coverage of the January 6th attack on the U.S. Capitol.</p>
                 <p style="margin-top: 1rem;">Ed holds a B.S. from Northwestern University's Medill School of Journalism, where he majored in Broadcast Journalism and Political Science. He was recognized with the William C. Fyffe Award for Broadcast Journalism—awarded by Medill faculty to the one student who most exemplifies "professional competency in, and dedication to, the mission of broadcast journalism." While Ed maintains ties to the D.C. area, he resides with his wife and daughter in Denver's South Park Hill neighborhood.</p>
-                <p style="margin-top: 1rem;">Ed founded Ed Words to aid emerging media outlets, independent journalists, and news-making summits with their important interviews, using his expertise to level up their conversations.</p>
+                <p style="margin-top: 1rem;">Ed founded Ed Words LLC to aid emerging media outlets, independent journalists, and news-making summits with their important interviews, using his expertise to level up their conversations.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/EPmrCg9648Q" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Rep. María Elvira Salazar (R-Fla.) - MTP NOW - July 2025</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/2FF5Qn_1N-Q" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Sen. Tammy Duckworth (D-Ill.) - MTP NOW - June 2025</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/xp1t8O0LT4Q" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Rep. Nanette Barragán (D-Calif.) - MTP Now - June 2025</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/B56gVoW-v8E" allowfullscreen></iframe>
+                    <div class="portfolio-caption">NEC Director Kevin Hassett - MTP Now - May 2025</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/FL3fioU0i8g" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Former Detroit Mayor Mike Duggan - MTP Now - January 2025</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/JOCRo97NoJ8" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Former President Donald Trump - Meet the Press - September 2023</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/-dmXJ99oC4k" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Republican Presidential Debate - NBC News - November 2023</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/fqOHDHByJU8" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Gov. Jared Polis (D-Colo.) - MTP Daily - February 2023</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/Hx481wFMZ7U" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Rep. Andy Barr (R-Ky.) - Meet the Press - August 2022</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/5KpGPkOear8?start=379" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Gov. Chris Sununu (R-N.H.) - Meet the Press - November 2021</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/UCA1A5GqCdQ" allowfullscreen></iframe>
+                    <div class="portfolio-caption">2020 Presidential Debate</div>
+                </div>
+                <div class="portfolio-item">
+                    <iframe src="https://www.youtube.com/embed/TZkV0ISxcQY" allowfullscreen></iframe>
+                    <div class="portfolio-caption">Democratic Presidential Debate - February 2020</div>
+                </div>
             </div>
         </section>
 
